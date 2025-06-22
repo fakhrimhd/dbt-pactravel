@@ -3,7 +3,7 @@ version: '3'
 services:
   sources:
     image: postgres:latest
-    container_name: pactravel-src
+    container_name: src-pactravel
     restart: always
     environment:
       - POSTGRES_DB=${SRC_POSTGRES_DB}
@@ -17,7 +17,7 @@ services:
 
   dwh:
     image: postgres:latest
-    container_name: pactravel-dwh
+    container_name: dwh-pactravel
     restart: always
     environment:
       - POSTGRES_DB=${DWH_POSTGRES_DB}
@@ -26,8 +26,7 @@ services:
     ports:
       - ${DWH_POSTGRES_PORT}:5432
     volumes:
-      - dwh_volume:/var/lib/postgresql/data
-      - ./data/dwh_data/:/docker-entrypoint-initdb.d
+      - dwh_volume:/var/lib/postgresql/data  
 
 volumes:
   source-volume:

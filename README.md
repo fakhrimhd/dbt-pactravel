@@ -38,7 +38,7 @@
   ```
 
 - **Dataset**
-    - Source: Pactravel
+    - Source: src_pactravel
     - DWH:
-        - staging schema: pactravel
-        - final schema: final
+        - staging schema: staging
+        - final schema: marts

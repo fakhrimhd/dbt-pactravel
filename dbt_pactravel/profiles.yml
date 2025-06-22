@@ -1,0 +1,22 @@
+dbt_pactravel:
+  outputs:
+    ources:
+      dbname: src_pactravel
+      host: localhost
+      pass: '123456'
+      port: 5433
+      schema: public
+      threads: 2
+      type: postgres
+      user: postgres
+
+    dev:
+      dbname: dwh_pactravel
+      host: localhost
+      pass: '123456'
+      port: 5434
+      schema: public
+      threads: 4
+      type: postgres
+      user: postgres
+  target: dev

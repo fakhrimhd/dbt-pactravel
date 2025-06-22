@@ -1,0 +1,11 @@
+packages:
+  - name: dbt_utils
+    package: dbt-labs/dbt_utils
+    version: 1.0.0
+  - name: dbt_date
+    package: calogica/dbt_date
+    version: 0.10.0
+  - name: dbt_constraints
+    package: Snowflake-Labs/dbt_constraints
+    version: 0.6.3
+sha1_hash: 83fdbf85c2be2702581c0e7cb88c623d9c3ca5bb
