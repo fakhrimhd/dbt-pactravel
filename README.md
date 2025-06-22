@@ -1,4 +1,4 @@
-# PACTRAVEL - ELT Pipeline Orhcestration For Exercise 3
+# PACTRAVEL - ELT Pipeline Orhcestration with dbt
 ## How to use this Data?
 1. Requirements
 2. Preparations
